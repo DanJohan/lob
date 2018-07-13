@@ -1,0 +1,46 @@
+[15-Jun-2018 09:20:32 UTC] PHP Notice:  Undefined variable: latitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[15-Jun-2018 09:20:32 UTC] PHP Notice:  Undefined variable: longitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[15-Jun-2018 10:57:55 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 10:57:55 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 10:58:59 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 10:58:59 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 10:59:01 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 10:59:01 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 10:59:09 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 10:59:09 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 11:00:02 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 11:00:02 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 11:04:55 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 11:04:55 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 11:05:17 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 11:05:17 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 11:06:00 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 11:06:00 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 13:17:31 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 13:17:31 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 13:17:48 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 13:17:48 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[15-Jun-2018 15:15:30 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[15-Jun-2018 15:15:30 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 04:34:42 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 04:34:42 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 04:38:48 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 04:38:48 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 04:38:52 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 04:38:52 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 04:43:13 UTC] PHP Notice:  Undefined variable: latitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 04:43:13 UTC] PHP Notice:  Undefined variable: longitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 05:02:49 UTC] PHP Notice:  Undefined variable: latitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 05:02:49 UTC] PHP Notice:  Undefined variable: longitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 05:02:55 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 05:02:55 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 06:36:44 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 06:36:44 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 07:41:30 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 07:41:30 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 07:41:44 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 07:41:44 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129
+[19-Jun-2018 07:43:11 UTC] PHP Notice:  Undefined variable: latitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 07:43:11 UTC] PHP Notice:  Undefined variable: longitude in /home/smartserve/public_html/testing/LOB/leagueofboss/business.php on line 110
+[19-Jun-2018 11:57:09 UTC] PHP Notice:  Use of undefined constant tbl_category - assumed 'tbl_category' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 113
+[19-Jun-2018 11:57:09 UTC] PHP Notice:  Use of undefined constant tbl_subcategory - assumed 'tbl_subcategory' in /home/smartserve/public_html/testing/LOB/leagueofboss/add-business.php on line 129

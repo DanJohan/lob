@@ -1,0 +1,17 @@
+/* Add here all your CSS customizations */
+#form1 label.col-sm-2.control-label {
+    min-width: 120px;
+    text-align: left;
+}
+
+a.mb-1.mt-1.mr-1.btn.btn-light.pull-right {
+    background-color: #50b7ff;
+    color: #fff;
+    border: 1px solid #ddd;
+    text-transform: uppercase;
+	margin-bottom:20px;
+}	
+
+.error{
+	color:red;
+}

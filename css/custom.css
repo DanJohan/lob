@@ -1,0 +1,884 @@
+section {
+    width: 100%;
+    float: left;
+}
+
+footer#footer {
+    width: 100%;
+    float: left;
+}
+
+.col-md-4, .col-md-6 {
+	float:left;
+}
+
+.entry-title h2 a:hover {
+    color: #f5c310 !important;
+}
+
+.entry-meta li a:hover {
+    color: #f5c310 !important;
+}
+
+.py50 {
+    padding-top:50px  !important;
+    padding-bottom:50px  !important;
+}
+
+.pt50 {
+    padding-top:50px  !important;
+}
+
+.pb50 {
+    padding-bottom:50px  !important;
+}
+
+.white {
+    color: #fff !important;
+}
+
+.upc {
+    text-transform: uppercase;
+}
+
+.fullw {
+    width:100% !important;
+    padding:0 !important;
+}
+
+
+/*********************************************Header************************************************/
+
+nav#primary-menu {
+    width: 100%;
+    display: flex;
+    text-align: center;
+}
+
+#header.full-header #primary-menu > ul.sf-js-enabled {
+    width: auto;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    border: none;
+}
+
+#header.full-header {
+    background-color: #000;
+	border: none;
+}
+
+#primary-menu ul li:hover > a, #primary-menu ul li.current > a {
+    color: #fff;
+}
+
+#primary-menu > ul > li > a > div {
+    color: #fff;
+}
+
+#primary-menu ul li:hover > a div, #primary-menu ul li.current > a div {
+    border-bottom: 3px solid #f4c30f;
+}
+
+body.stretched #header.full-header .container {
+    background-color: #000;
+}
+
+#primary-menu ul ul:not(.mega-menu-column), #primary-menu ul li .mega-menu-content {
+    border-top: 2px solid #f5c310;
+}
+
+#primary-menu ul ul li:hover > a {
+    background-color: #F9F9F9;
+    padding-left: 18px;
+    color: #1b1b1b;
+}
+
+/**********************************************Search*************************************************/
+
+
+.search-box input[type=text] {
+    max-width: 300px;
+    box-sizing: border-box;
+    border-radius: 7px;
+    font-size: 16px;
+    background-color: #ffffff00;
+    padding: 0 10px;
+    -webkit-transition: width 0.4s ease-in-out;
+    line-height: 34px;
+    margin-right: 15px;
+    float: left;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.search-box input[type=text] {
+  border-image-source: linear-gradient(to right, #b4814d, #fbf5a1, #b4814d) ;
+  border-width: 2px;
+  border-image-slice: 1;
+}
+
+.section1.col-md-12 {
+    margin-left: 0px;
+    float: left;
+    background: transparent;
+}
+
+.find.col-md-3 {
+    float: left;
+}
+.near.col-md-3 {
+    float: left;
+    position: inherit;
+    margin-left: 38px;
+}
+
+.find .button {
+    background: linear-gradient(to right, #b4814d, #fbf5a1, #b4814d);
+    border: none;
+    color: black;
+    padding: 0px 13px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: left;
+    line-height: 37px;
+    font-weight: bold;
+    margin: 0 10px 0 0;
+}
+
+.find.col-md-10.add-a-business {
+    background: linear-gradient(to right, #b4814d, #fbf5a1, #b4814d);
+    border: none;
+    color: black;
+    padding: 0px 13px;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 3px;
+    float: right;
+    line-height: 37px;
+    font-weight: bold;
+}
+
+button.button {
+    margin-right: 13px;
+}
+
+.find.col-md-10 {
+    width: auto;
+    margin: 0 auto;
+    float: none;
+}
+
+
+i.fa.fa-location-arrow {
+    color: #b88651;
+}
+
+.find a {
+    width: 100%;
+    float: left;
+    margin-bottom: 0;
+    font-size: 13px;
+    max-width: 500px;
+    color: #bfbfbf;
+    text-decoration: none !important;
+}
+
+.find a:hover {
+    color: #b88550;
+}
+
+.find a .fa {
+	margin-right:7px;
+}
+
+section.search-box {
+    width: 100%;
+    float: left;
+    background-color: #061323;
+    padding: 15px 0 10px;
+	color: #babbbb !important;
+}
+
+#myCarousel ol.carousel-indicators li {
+    margin: 0 5px;
+}
+
+/***************************************************Search end**************************************************/
+
+
+/***************************************************Slider**************************************************/
+
+section.bg {
+    background-color: #061323;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    position: relative;
+    padding: 40px 0;
+    height: auto;
+}
+
+
+.bg .carousel-control.right {
+    right: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.000)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+.bg .carousel-control.left {
+    left: 0;
+    left: auto;
+    background-image: -webkit-linear-gradient(left,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    background-image: -o-linear-gradient(left,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    background-image: -webkit-gradient(linear,left top,right top,from(rgba(0,0,0,.000)),to(rgba(0,0,0,0)));
+    background-image: linear-gradient(to right,rgba(0,0,0,.000) 0,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);
+    background-repeat: repeat-x;
+}
+
+
+/***************************************************Slider end**************************************************/
+
+
+/***************************************************About**************************************************/
+
+
+section.About {
+    position: static; 
+    margin-bottom: 0;
+    background-image: url(../images/img/about-bg.png);
+    background-size: cover;
+    padding-top: 25%;
+    background-attachment: fixed;
+}
+
+.back-img img {
+    width: 100%;
+}
+
+.abt-txt {
+    width: 100%;
+    float: left;
+    bottom: 0;
+}
+
+.abtus {
+    color: #323232;
+    text-transform: uppercase;
+    float: left;
+    min-width: 220px;
+}
+
+.txttt {
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    margin-bottom: 50px;
+    border-left: 6px solid #333;
+    position: relative;
+}
+
+.txttt::before {
+    content: "";
+    width: 6px;
+    height: 32px;
+    background-color: #f5c310;
+    position: absolute;
+    left: -6px;
+    top: 0;
+    border-radius: 6px;
+    bottom: 0;
+    margin: auto;
+}
+
+.abtus h2 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 82px;
+}
+
+.txttt p {
+    background-color: rgba(0, 0, 0, 0.43);
+    padding: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+    line-height: 24px;
+    letter-spacing: 0.5px;
+}
+
+/***************************************************About end**************************************************/
+
+
+/*****************************************************We are the Best section****************************************************/
+
+section.vrtb {
+    width: 100%;
+    float: left;
+    background-image: url(../images/img/bc.jpg);
+    padding: 50px 0 65px;
+    background-size: cover;
+}
+
+.vrtb .col-md-3.col-sm-6 {
+    text-align: center;
+    padding: 50px 0 0px;
+    float: left;
+}
+
+.vrtb img {
+    width: auto;
+    max-width: 100%;
+}
+
+.vrtb h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ffcd00;
+    font-size: 36px;
+}
+
+.vrtb h4 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.vrtb .col-md-3.col-sm-6 h4 {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px #141414;
+    margin: 45px 0 0;
+}
+
+.vrtb h4 {
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.vrtb img:hover {
+    transform: rotate(360deg);
+}
+
+.vrtb img {
+    width: auto;
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 107px 21px #ffc741ad;
+    transition: 0.5s;
+}
+
+/*****************************************************We are the Best section end****************************************************/
+
+
+/*****************************************************************Video Slider**********************************************************/
+
+.vid-sldr .ifrm-vid iframe {
+    position: relative !important;
+}
+
+span.lft {
+    width: auto;
+    float: left;
+    color: #f5c310;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+span.rgt {
+    width: auto;
+    float: right;
+    color: #f5c310;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.abt-vid p {
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.abt-vid {
+    padding: 10px 20px;
+    width: 100%;
+    float: left;
+}
+
+.abt-vid h5 {
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    margin-bottom: 15px;
+    width: 100%;
+    float: left;
+}
+
+.vid-sldr .oc-item {
+    background-color: #2F3E48;
+    width: 100%;
+    float: left;
+}
+
+.ifrm-vid {
+    width: 100%;
+    float: left;
+}
+
+.vid-sldr {
+    background-color: #011421 !important;
+}
+
+.vid-sldr .fancy-title h3 {
+    color: #fff;
+    background-color: #011422;
+    text-transform: uppercase;
+}
+
+
+/*****************************************************************Video Slider end**********************************************************/
+
+
+
+/*****************************************************************Header 2**********************************************************/
+
+#header.full-header. {
+    position: relative;
+}
+
+#top-account {
+    position: absolute;
+    right: 50px;
+}
+
+section#content.minw {
+    min-height: 100vh;
+}
+
+/*****************************************************************Header 2 end**********************************************************/
+
+
+
+
+
+/*****************************************************start button****************************************************/
+
+section.start.button {
+    width: 100%;
+    float: left;
+    padding: 30px 0;
+    background-color: #061323;
+    height: auto;
+    margin: 0;
+}
+
+.button12 {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    background-color: #061323;
+    color: #a0a0a0;
+    border-top: 5px solid #fff;
+    margin-top: 10px;
+}
+
+.button12 h2 {
+    line-height: 46px;
+    color: #A0A09E;
+    margin-top: 10px;
+    padding-top: 55px;
+    width: auto;
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+button.start {
+    border-image-source: linear-gradient(to right, #b4814d, #fbf5a1, #b4814d) !important;
+    border-width: 2px !important;
+    border-image-slice: 1 !important;
+}
+
+button.start {
+    float: right;
+    width: 15%;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    line-height: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #deb062;
+    margin-top: 68px;
+	min-width: 140px;
+}
+
+button.start:focus {
+    outline: none;
+}
+
+/*****************************************************start button end****************************************************/
+
+
+/*****************************************************Anout us page ****************************************************/
+
+.our-team.heading-block {
+    width: 100%;
+    float: left;
+}
+
+.our-team .fancy-title {
+    float: left;
+    width: 100%;
+}
+
+/*****************************************************Anout us page end****************************************************/
+
+
+
+/******************************************************Footer end**************************************************/
+
+.footer {
+    background-color: #0A1B29;
+    width: 100%;
+    float: left;
+    /* box-shadow: 0px 1px 17px 1px #00000059; */
+    z-index: 999;
+    position: relative;
+	margin-top:0;
+}
+
+.footrr.col-md-12 {
+    float: left;
+    width: 100%;
+    padding: 40px 0;
+}
+
+.footrrmenu.col-md-8 {
+    float: left;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 0;
+}
+
+ul.footrr12 {
+    list-style: none;
+    float: left;
+    margin: 0px auto;
+    padding: 0;
+    margin-left: -20px;
+}
+
+li.footerhome {
+    float: left;
+    padding: 0 20px;
+    color: #fff;
+}
+
+a.footertext:hover {
+    border-top: 3px solid #f4c30f;
+    color: #fff;
+}
+
+a.footertext {
+    color: #fff;
+    margin-left: 0;
+    padding: 5px 0;
+    font-weight: bold;
+    text-decoration: none !important;
+    text-transform: uppercase;
+}
+
+.footericon.col-md-4 {
+    float: right;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.footericon .icon {
+    float: right;
+    padding: 0;
+    margin: 0 auto;
+    color: #fff;
+}
+
+.footericon.col-md-4 .icon .fa {
+    margin-left: 30px;
+    color: #fff;
+}
+
+.footericon.col-md-4 .icon .fa:hover {
+    color: #fecd00;
+}
+
+.news.col-md-6 {
+    float: left;
+    color: #fff;
+    margin-left: -15px;
+}
+
+.footer2nd.col-md-12 {
+    float: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.news h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+	color: #fff;
+}
+
+.news input.nltr {
+    width: 100%;
+    box-sizing: border-box;
+    border: 3px solid #8b8b8b;
+    border-radius: 25px;
+    font-size: 16px;
+    background-color: #ffffff00;
+    padding: 0 20px;
+    -webkit-transition: width 0.4s ease-in-out;
+    line-height: 40px;
+    margin-right: 0px;
+    float: left;
+    max-width: 300px;
+}
+
+.news input.nltr:focus {
+    outline: none;
+}
+
+.empty span {
+    margin-right: 10px;
+    border-top: 3px solid #f4c30f;
+    padding-top: 5px;
+}
+
+.contact.col-md-3 {
+    float: left;
+    color: #fff;
+}
+
+.contact h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+	color: #fff;
+}
+
+.contact-list {
+    float: left;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.photo.col-md-3 {
+    float: right;
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.photoo {
+    width: 100%;
+    max-width: 265px;
+    float: right;
+	list-style: none;
+    margin: 0 auto;
+    padding: 0 0;
+	column-count: 3;
+}
+
+.photoo a {
+    width: 100%;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.photo h3 {
+    text-transform: uppercase;
+    font-size: 23px;
+	color: #fff;
+    padding: 0px 0 6px 23px;
+}
+
+.photoo img {
+    width: 100%;
+}
+
+.news p {
+    margin: 20px 0 30px;
+    color: #bfbfbf;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+    font-size: 15px;
+}
+
+.contact-list li {
+    line-height: 22px;
+    padding: 5px 10px;
+    border-left: 3px solid #0008;
+}
+
+.contact-list li:hover {
+    border-color: #f4c30f;
+}
+
+.empty {
+    float: left;
+    width: 100%;
+}
+
+.empty-bd {
+    border-top: 4px solid;
+    color: #4c4c4c;
+    width: 5%;
+    margin: 0 auto;
+    padding: 0px 4px 0 11px;
+    float: left;
+}
+
+.empty p {
+    color: #fff;
+    float: left;
+}
+
+
+/******************************************************Footer end**************************************************/
+
+/************************************************** Add business page *********************************************/
+
+
+input#gridCheck {
+    width: auto;
+    float: left;
+}
+
+.agre .form-check-label {
+    width: auto;
+    float: left;
+    margin-left: 20px;
+    margin-top: 2px;
+}
+
+.form-control {
+    height: 34px !important;
+}
+
+#addb button.btn.btn-primary {
+    width: 100px;
+    float: left;
+    clear: both;
+    margin: 20px 10px 30px;
+}
+
+#add-bussines ul {
+    padding-left: 30px;
+}
+
+#page-title {
+    padding: 25px 0 !important;
+    background-color: #091B29 !important;
+    margin-bottom: 20px !important;
+}
+
+#page-title h1 {
+    color: #fff !important;
+    font-size: 20px;
+}
+
+.breadcrumb a {
+    color: #fff !important;
+}
+
+
+
+/************************************************ Add Business page end ***********************************************/
+
+
+/************************************************ Business page ***********************************************/
+
+.fullw {
+    width: 100% !important;
+    margin: 0 !important;
+}
+
+.filterr, .filterr + #posts  {
+    width: 100%;
+    float: left;
+}
+
+#posts > div:last-child {
+    margin-bottom: 0px;
+}
+
+.row.new-old {
+    width: 100%;
+    float: left;
+    margin: 30px 0 !important;
+}
+
+.new-old a.btn:hover {
+    background-color: #f5c310;
+    color: #fff;
+    border: 1px solid #f5c310;
+}
+
+
+
+/************************************************ Business page end***********************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/****************************************************************Media Query/****************************************************************/
+
+@media screen and (max-width: 767px) {
+
+button.start {
+    float: left;
+	margin-top: 0px;
+}
+
+.button12 h2 {
+    padding-top: 25px;
+}
+
+
+}
