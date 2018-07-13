@@ -100,78 +100,27 @@ if($business_infos){
 	<div class="container clearfix">
 		
 		<div class="postcontent nobottommargin fullw mr-0">
-		
-			<div class="filterr"> 
-			
-				<form id="busi">
-				
-					<div class="form-group col-md-4">
-						<label for="inputcateg">Category</label>
-						<select id="inputcateg" class="form-control" name="inputcateg">
-							<option value="">Select Category</option>
-							<?php
-								if($categories){
-									foreach ($categories as $index => $name) {
-							?>
 
-								<option data-location="business.php?category=<?php echo $categories_ids[$index]['cat_code'].$search_query.$state_query.$distance_query.$page_query; ?>" value="<?php echo $categories_ids[$index]['cat_code']; ?>"><?php echo $name; ?>(<?php echo $categories_total[$categories_ids[$index]['cat_code']]?> )</option>
-							<?php
-									}
-								}
-							?>
-						</select>
-					</div>
-					
-					<!-- <div class="form-group col-md-4">
-						<label for="inputsource">Source</label>
-						<select id="inputsource" class="form-control" name="inputsource">
-							<option value="">Select Source</option>
-							<option value="AK">A</option>
-							<option value="AL">B</option>
-						</select>
-					</div>
-					 -->
-					<div class="form-group col-md-4">
-						<label for="inputState">State</label>
-						<select id="inputState" class="form-control" name="business_state">
-							<option value="">Select State</option>
-							<?php
-								if($states){
-									foreach ($states as $index => $name) {
-							?>
-								<option data-location="business.php?state=<?php echo $states_ids[$index]['state_code'].$search_query.$category_query.$distance_query.$page_query; ?>" value="<?php echo $states_ids[$index]['state_code']?>"><?php echo $name; ?>(<?php echo $states_total[$states_ids[$index]['state_code']]?> )</option>
-							<?php
-									}
-								}
-							?>
-						</select>
-					</div>
-					<?php
-					if(!empty($_GET['place_lat'])) {
-					?>
-					<div class="form-group col-md-4">
-						<label for="inputdistance">Distance</label>
-						<select id="inputdistance" class="form-control" name="distance">
-							<?php 
-								$distance_url=getAddress();
-								$distance_url.=(isset($_GET['keyword']) || isset($_GET['category']) || isset($_GET['state'])|| isset($_GET['distance']))? '&' : '?';
-							?>
-							<option  value="">Select Distance</option>
-							<option data-location="business.php?distance=5<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="5">5 mi</option>
-							<option data-location="business.php?distance=10<?php echo $search_query.$category_query.$state_query.$page_query; ?>"; ?>" value="10">10 mi</option>
-							<option data-location="business.php?distance=25<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="25">25 mi</option>
-							<option data-location="business.php?distance=50<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="50">50 mi</option>
-							<option data-location="business.php?distance=100<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="100">100 mi</option>
-						</select>
-					</div>
-					<?php
-					}
-					?>
-				</form>
-				
+			<div id="posts" class="events small-thumbs col-sm-9">
+			<?php
+			if(!empty($_GET['place_lat'])) {
+			?>
+			<div class="form-group col-sm-offset-8">
+				<label for="inputdistance">Sort by Distance</label>
+				<select id="inputdistance" class="form-control" name="distance">
+					<option  value="">Select Distance</option>
+					<option data-location="business.php?distance=5<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="5">5 mi</option>
+					<option data-location="business.php?distance=10<?php echo $search_query.$category_query.$state_query.$page_query; ?>"; value="10">10 mi</option>
+					<option data-location="business.php?distance=25<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="25">25 mi</option>
+					<option data-location="business.php?distance=50<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="50">50 mi</option>
+					<option data-location="business.php?distance=100<?php echo $search_query.$category_query.$state_query.$page_query; ?>" value="100">100 mi</option>
+				</select>
 			</div>
+			<?php
+			}
+			?>
 
-			<div id="posts" class="events small-thumbs col-sm-8">
+
 			<?php
 			 if(!empty($business_infos)) {
 			 	foreach ($business_infos as $index => $business_info) {
@@ -188,7 +137,7 @@ if($business_infos){
 			 
 					<div class="entry-image">
 						<?php if($upload_logo!='') {?>
-						<img src="uploads/<?php echo $upload_logo; ?>" alt="<?php echo $business_name ;?>" height="200px" width="200px">
+						<img src="uploads/<?php echo $upload_logo; ?>" alt="<?php echo $business_info['business_name'] ;?>" height="200px" width="200px">
 						<?php } else {?>
 						<img src="images/no-img.jpg" alt="No image" height="200px" width="200px">
 						<?php } ?>
@@ -196,7 +145,7 @@ if($business_infos){
 					</div>
 					<div class="entry-c">
 						<div class="entry-title">
-							<h2><a href="#"><?php echo $business_info['business_name']; ?></a></h2>
+							<h2><a href="business-details.php?bid=<?php echo $business_info['business_id']; ?>"><?php echo $business_info['business_name']; ?></a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
 							<!--<li><a href="#"><i class="icon-time"></i> 11:00 - 19:00</a></li>-->
@@ -204,7 +153,7 @@ if($business_infos){
 						</ul>
 						<div class="entry-content">
 							<p><?php echo $short_desc; ?></p>
-							<a href="#" class="btn btn-danger">Read More</a>
+							<a href="business-details.php?bid=<?php echo $business_info['business_id']; ?>" class="btn btn-danger">Read More</a>
 						</div>
 					</div>
 					
@@ -214,14 +163,53 @@ if($business_infos){
 			}
 			?>
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-3">
 				<?php
 				if(!empty($_GET['place_lat'])) { 
 				?>
-				<div id="map" style="height: 500px;"></div>
+				<div style="margin-bottom: 20px;">
+					<div  id="map" style="height: 300px;"></div>
+				</div>
+				<hr>
 				<?php
 				}
 				?>
+
+
+				<h3>Refine your search</h3>
+				<div class="form-group">
+						<label for="inputcateg">Category</label>
+						<select id="inputcateg" class="form-control" name="inputcateg">
+							<option value="">Select Category</option>
+							<?php
+								if($categories){
+									foreach ($categories as $index => $name) {
+							?>
+
+								<option data-location="business.php?category=<?php echo $categories_ids[$index]['cat_code'].$search_query.$state_query.$distance_query.$page_query; ?>" value="<?php echo $categories_ids[$index]['cat_code']; ?>"><?php echo $name; ?>(<?php echo $categories_total[$categories_ids[$index]['cat_code']]?> )</option>
+							<?php
+									}
+								}
+							?>
+						</select>
+				</div>
+				<div class="form-group">
+						<label for="inputState">State</label>
+						<select id="inputState" class="form-control" name="business_state">
+							<option value="">Select State</option>
+							<?php
+								if($states){
+									foreach ($states as $index => $name) {
+							?>
+								<option data-location="business.php?state=<?php echo $states_ids[$index]['state_code'].$search_query.$category_query.$distance_query.$page_query; ?>" value="<?php echo $states_ids[$index]['state_code']?>"><?php echo $name; ?>(<?php echo $states_total[$states_ids[$index]['state_code']]?> )</option>
+							<?php
+									}
+								}
+							?>
+						</select>
+				</div>
+
+
 			</div>
 
 			<!-- Pagination

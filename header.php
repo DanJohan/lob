@@ -135,6 +135,12 @@
 			  ?>
 		<section class="search-box">
 			<div class="container">
+
+
+
+
+
+				
 				<div class="section1 col-md-12">
 					<div class="find col-md-10">
 				<form method="get" action="business.php" class="searchform">					
@@ -147,7 +153,8 @@
 						 <input type = "submit" value="Go" id="search"  class="button search-button btn" />
 				</form>
 						<!--<button class="button mr-0">Add A Business</button>-->
-						 <input type = "submit" value="Add A Business"  name="addbusiness" id="addbusiness"  class="button mr-0" />
+						<!--  <input type = "submit" value="Add A Business"  name="addbusiness" id="addbusiness"  class="button mr-0" /> -->
+						   <a href = "add-business.php" id="addbusiness" style="width: 190px;"  class="button mr-0" >Add A Business</a> 
 						<a href="#" id="use_location"><i class="fa fa-location-arrow" aria-hidden="true"></i>Use current location</a>
 				
 						

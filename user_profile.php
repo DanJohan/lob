@@ -121,7 +121,7 @@ $q="UPDATE  `tbl_users` SET  `user_name` =  '".$user_name."',`user_email` =  '".
 					</div>
 					<div class="entry-c">
 						<div class="entry-title">
-							<h2><a href="javascript:void();"><?php echo $business_name; ?></a></h2>
+							<h2><a href="business-details.php?bid=<?php echo $result['business_id']; ?>"><?php echo $business_name; ?></a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
 							<!--<li><a href="#"><i class="icon-time"></i> 11:00 - 19:00</a></li>-->
@@ -131,7 +131,7 @@ $q="UPDATE  `tbl_users` SET  `user_name` =  '".$user_name."',`user_email` =  '".
 						</ul>
 						<div class="entry-content">
 							<p><?php echo $short_desc; ?></p>
-							<!--<a href="#" class="btn btn-danger">Read More</a>-->
+							<a href="business-details.php?bid=<?php echo $result['business_id']; ?>" class="btn btn-danger">Read More</a>
 						</div>
 					</div>
 					

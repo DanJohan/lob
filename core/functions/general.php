@@ -11,6 +11,30 @@ function dd($data,$dump=true){
 	}
 }
 
+function get_featured_businesses(){
+	global $link;
+	$businesses=array();
+	$sql = "SELECT b.*,s.code from tbl_businessinfo AS b INNER JOIN tbl_states AS s ON b.business_state=s.id where b.is_featured=1";
+	$query = mysqli_query($link, $sql);
+	while($result = mysqli_fetch_array($query,MYSQLI_ASSOC))
+	{
+		$businesses[]=$result;			 
+	}
+	return (!empty($businesses))?$businesses:null;
+}
+
+
+function get_similar_businesses($cat_id){
+	global $link;
+	$businesses=array();
+	$sql = "SELECT b.*,s.code from tbl_businessinfo AS b INNER JOIN tbl_states AS s ON b.business_state=s.id where b.business_category=".$cat_id;
+	$query = mysqli_query($link, $sql);
+	while($result = mysqli_fetch_array($query,MYSQLI_ASSOC))
+	{
+		$businesses[]=$result;			 
+	}
+	return (!empty($businesses))?$businesses:null;
+}
 function get_states(){
 	global $link;
 	$states=array();
@@ -140,5 +164,32 @@ function sanitize($data){
 
 function array_sanitize($data){
 	array_walk($data,'sanitize');
+}
+
+function slugify($text)
+{
+	  // replace non letter or digits by -
+	  $text = preg_replace('~[^\pL\d]+~u', '-', $text);
+
+	  // transliterate
+	  $text = iconv('utf-8', 'us-ascii//TRANSLIT', $text);
+
+	  // remove unwanted characters
+	  $text = preg_replace('~[^-\w]+~', '', $text);
+
+	  // trim
+	  $text = trim($text, '-');
+
+	  // remove duplicate -
+	  $text = preg_replace('~-+~', '-', $text);
+
+	  // lowercase
+	  $text = strtolower($text);
+
+	  if (empty($text)) {
+	    return 'n-a';
+	  }
+
+	  return $text;
 }
 ?>

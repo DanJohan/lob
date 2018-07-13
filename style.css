@@ -13574,3 +13574,6 @@ body:not(.no-transition) #wrapper,
 	height: 30px !important;
 }
 
+.mb-5{
+	margin-bottom: 5px !important;
+}

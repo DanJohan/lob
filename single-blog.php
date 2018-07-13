@@ -20,7 +20,7 @@ if(empty($blog)){
 <section id="page-title">
 
 	<div class="container clearfix">
-		<h1>Blog</h1>
+		<h1><?php echo $blog['title']; ?></h1>
 		<ol class="breadcrumb">
 			<li class="breadcrumb-item"><a href="index.php">Home</a></li>
 			<li class="breadcrumb-item"><a href="business.php">Blog</a></li>
