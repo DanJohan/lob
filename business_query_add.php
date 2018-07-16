@@ -2,6 +2,7 @@
 ini_set('display_error',0);
 session_start();
 include("config.php");
+require_once 'core/init.php';
 
 // initializing variables
 if(isset($_REQUEST['businessSubmit']))
@@ -65,10 +66,11 @@ $upload_logo="";
   
   
 //geo code for lat and long 
+$state = get_state_by_id($business_state);
 $geoAddress = '';
 $geoAddress .= str_replace(" ","+",$business_address1);
 $geoAddress .= "+" . str_replace(" ","+",$business_city);
-$geoAddress .= "+" . str_replace(" ","+",$business_state);
+$geoAddress .= "+" . str_replace(" ","+",$state['code']);
 
 $details_url = "http://maps.googleapis.com/maps/api/geocode/json?address=" . $geoAddress . "&sensor=false";
 $ch = curl_init();

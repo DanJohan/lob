@@ -8,7 +8,7 @@
 				  <li class="footerhome"><a href="active" class="footertext">Home</a></li>
 				  <li class="footerhome"><a href="about.php" class="footertext">About</a></li>
 				  <li class="footerhome"><a href="business.php" class="footertext">Browse Businesses</a></li>
-				  <li class="footerhome"><a href="javascript:void(0);" class="footertext">Blog</a></li>
+				  <li class="footerhome"><a href="blog.php" class="footertext">Blog</a></li>
 				  <li class="footerhome"><a href="contact.php" class="footertext">Contact</a></li>
 				  <li class="footerhome"><a href="manage.php" class="footertext">Manage</a></li>
 				</ul>
@@ -80,69 +80,8 @@
 	============================================= -->
 	<script src="js/functions.js"></script>
 
-	<script>
-		/* jQuery(document).ready( function($){
-			var newDate = new Date(2018, 9, 31);
-			$('#countdown-ex1').countdown({until: newDate});
-		});
 
-		var cal = $( '#calendar' ).calendario( {
-			onDayClick : function( $el, $contentEl, dateProperties ) {
 
-				for( var key in dateProperties ) {
-					console.log( key + ' = ' + dateProperties[ key ] );
-				}
-
-			},
-			caldata : canvasEvents
-		} ),
-		$month = $( '#calendar-month' ).html( cal.getMonthName() ),
-		$year = $( '#calendar-year' ).html( cal.getYear() );
-
-		$( '#calendar-next' ).on( 'click', function() {
-			cal.gotoNextMonth( updateMonthYear );
-		} );
-		$( '#calendar-prev' ).on( 'click', function() {
-			cal.gotoPreviousMonth( updateMonthYear );
-		} );
-		$( '#calendar-current' ).on( 'click', function() {
-			cal.gotoNow( updateMonthYear );
-		} );
-
-		function updateMonthYear() {
-			$month.html( cal.getMonthName() );
-			$year.html( cal.getYear() );
-		}
-
-		$('#google-map4').gMap({
-			 address: 'Australia',
-			 maptype: 'ROADMAP',
-			 zoom: 3,
-			 markers: [
-				{
-					address: "Melbourne, Australia",
-					html: "Melbourne, Australia"
-				},
-				{
-					address: "Sydney, Australia",
-					html: "Sydney, Australia"
-				},
-				{
-					address: "Perth, Australia",
-					html: "Perth, Australia"
-				}
-			 ],
-			 doubleclickzoom: false,
-			 controls: {
-				 panControl: true,
-				 zoomControl: true,
-				 mapTypeControl: false,
-				 scaleControl: false,
-				 streetViewControl: false,
-				 overviewMapControl: false
-			 }
-		}); */
-</script>
 <script type="text/javascript">
 function initialize()
     {

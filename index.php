@@ -191,7 +191,7 @@ while($result=mysqli_fetch_array($res))
 						<h4>Blog</h4>
 					</div>
 					<div class="col-md-3 col-sm-6">
-						<a href="#"><img src="images/img/6.png"></a>
+						<a href="faq.php"><img src="images/img/6.png"></a>
 						<h4>FAQ</h4>
 					</div>
 					<div class="col-md-3 col-sm-6">
@@ -214,7 +214,7 @@ while($result=mysqli_fetch_array($res))
 		  <div class="container">
 			<div class="button12">
 			  <h2>don't know where to start? start here</h2>
-			  <button class="start">start now</button>
+			  <button class="start"><a style="color: #deb062;" href="manage.php">start now</a></button>
 			</div>
 		  </div>
 		</section>		

@@ -531,6 +531,30 @@ button.start:focus {
     outline: none;
 }
 
+a.start {
+    border-image-source: linear-gradient(to right, #b4814d, #fbf5a1, #b4814d) !important;
+    border-width: 2px !important;
+    border-image-slice: 1 !important;
+}
+
+a.start {
+    float: right;
+    width: 15%;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent;
+    line-height: 39px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #deb062;
+    margin-top: 68px;
+    min-width: 140px;
+}
+
+a.start:focus {
+    outline: none;
+}
+
 /*****************************************************start button end****************************************************/
 
 

@@ -103,7 +103,7 @@ if($business_infos){
 
 			<div id="posts" class="events small-thumbs col-sm-9">
 			<?php
-			if(!empty($_GET['place_lat'])) {
+			if(!empty($_GET['place_lat']) && !empty($business_infos)) {
 			?>
 			<div class="form-group col-sm-offset-8">
 				<label for="inputdistance">Sort by Distance</label>
@@ -160,12 +160,14 @@ if($business_infos){
 				</div>
 			<?php
 				}
+			}else{
+				echo "<div><h3>No result found! Search again</h3></div>";
 			}
 			?>
 			</div>
 			<div class="col-sm-3">
 				<?php
-				if(!empty($_GET['place_lat'])) { 
+				if(!empty($_GET['place_lat']) && !empty($business_infos) ) { 
 				?>
 				<div style="margin-bottom: 20px;">
 					<div  id="map" style="height: 300px;"></div>
@@ -175,7 +177,7 @@ if($business_infos){
 				}
 				?>
 
-
+				<?php if(!empty($business_infos)) { ?>
 				<h3>Refine your search</h3>
 				<div class="form-group">
 						<label for="inputcateg">Category</label>
@@ -208,7 +210,7 @@ if($business_infos){
 							?>
 						</select>
 				</div>
-
+				<?php } ?>
 
 			</div>
 
@@ -217,13 +219,13 @@ if($business_infos){
 			<div class="row new-old">
 				<div class="col-12">
 					<?php
-						$page_url=getAddress();
-						$page_url.=(isset($_GET['keyword']) || isset($_GET['category']) || isset($_GET['state']) || isset($_GET['distance']))? '&' : '?';
+						if(!empty($business_infos)) {
 					?>
 					<?php if($page!=1) {?>
 					<a href="business.php?page=<?php echo ($page-1).$search_query.$category_query.$state_query.$distance_query; ?>" class="btn btn-outline-secondary float-left">← Older</a>
 				    <?php } ?>
 					<a href="business.php?page=<?php echo ($page+1).$search_query.$category_query.$state_query.$distance_query; ?>" class="btn btn-outline-dark float-right">Newer →</a>
+				<?php } ?>
 				</div>
 			</div>
 			<!-- .pager end -->
