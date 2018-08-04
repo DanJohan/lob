@@ -1,7 +1,7 @@
 <?php 
 global $link;
 
-$link = mysqli_connect('localhost','root','','lob');
+$link = mysqli_connect('localhost','root','root','lob');
 // Check connection
 if (mysqli_connect_errno())
   {

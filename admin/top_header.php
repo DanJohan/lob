@@ -38,6 +38,7 @@
 
 		<!-- Head Libs -->
 		<script src="assets/vendor/modernizr/modernizr.js"></script>
+		<link rel="stylesheet" href="assets/stylesheets/datatables.min.css">
 
 	</head>
 	

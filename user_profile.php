@@ -65,12 +65,17 @@ $q="UPDATE  `tbl_users` SET  `user_name` =  '".$user_name."',`user_email` =  '".
 
 			<img src="images/img/avatar.jpg" class="alignleft img-circle img-thumbnail notopmargin nobottommargin" alt="Avatar" style="max-width: 84px;">
 
-			<div class="heading-block noborder">
-				<h3><?php echo $user_name; ?></h3>
-				<span>Your Profile Details </span>
-				<p><span>Full Name&nbsp;:&nbsp;&nbsp;&nbsp;</span><span><?php echo $user_first_name." ".$user_last_name; ?></span>
-				<br>
-				<span>Email&nbsp;:&nbsp;&nbsp;&nbsp;</span><span><?php echo $user_email; ?></span></p>
+			<div class="row heading-block noborder">
+				<div class="col-md-6">
+					<h3><?php echo $user_name; ?></h3>
+					<span>Your Profile Details </span>
+					<p><span>Full Name&nbsp;:&nbsp;&nbsp;&nbsp;</span><span><?php echo $user_first_name." ".$user_last_name; ?></span>
+					<br>
+					<span>Email&nbsp;:&nbsp;&nbsp;&nbsp;</span><span><?php echo $user_email; ?></span></p>
+				</div>
+				<div class="col-md-6">
+					<a href="subscription-plan.php" class="btn btn-danger" style="color:white;">Promote your business</a>
+				</div>
 			</div>
 
 		</div>
@@ -124,14 +129,12 @@ $q="UPDATE  `tbl_users` SET  `user_name` =  '".$user_name."',`user_email` =  '".
 							<h2><a href="business-details.php?bid=<?php echo $result['business_id']; ?>"><?php echo $business_name; ?></a></h2>
 						</div>
 						<ul class="entry-meta clearfix">
-							<!--<li><a href="#"><i class="icon-time"></i> 11:00 - 19:00</a></li>-->
-							<li><a href="javascript:void();"><i class="icon-map-marker2"></i><?php echo $business_city; ?></a>
-							
-							</li>
+							<li><a target="_blank" href="http://maps.google.com/?q=<?php echo $result['latitude']; ?>,<?php echo $result['longitude']; ?>"><i class="icon-map-marker2"></i><?php echo $result['business_city']; ?></a>&nbsp;&nbsp;<a href="#"><i class="icon-map-marker2"></i><?php echo $result['code']; ?></a></li>
 						</ul>
 						<div class="entry-content">
 							<p><?php echo $short_desc; ?></p>
 							<a href="business-details.php?bid=<?php echo $result['business_id']; ?>" class="btn btn-danger">Read More</a>
+						<a href="business-delete.php?bid=<?php echo $result['business_id']; ?>" class="btn btn-primary">Delete </a>
 						</div>
 					</div>
 					

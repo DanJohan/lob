@@ -47,5 +47,6 @@
 
 		<!-- Examples -->
 		<script src="assets/javascripts/dashboard/examples.dashboard.js"></script>
+		<script src="assets/javascripts/datatables.min.js"></script>
 	</body>
 </html>

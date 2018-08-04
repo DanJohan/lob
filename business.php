@@ -124,6 +124,7 @@ if($business_infos){
 			<?php
 			 if(!empty($business_infos)) {
 			 	foreach ($business_infos as $index => $business_info) {
+			 		//dd($business_info,false);
 					$business_state=$business_info['business_state'];
 					$short_desc=$business_info['short_description'];
 					$upload_logo=$business_info['upload_logo'];
@@ -153,7 +154,16 @@ if($business_infos){
 						</ul>
 						<div class="entry-content">
 							<p><?php echo $short_desc; ?></p>
+							<div class="col-md-12 mb-5" >
+								<span class="social-icon"><a  href="<?php echo $business_info['facebook']; ?>" class="fa fa-facebook"></a></span>
+								<span class="social-icon"><a href="<?php echo $business_info['twitter']; ?>" class="fa fa-twitter"></a></span>
+								<span class="social-icon"><a href="<?php echo $business_info['google']; ?>" class="fa fa-google"></a></span>
+								<span class="social-icon"><a href="<?php echo $business_info['linkedin']; ?>" class="fa fa-linkedin"></a></span>
+								<span class="social-icon"><a href="<?php echo $business_info['instagram']; ?>" class="fa fa-instagram"></a></span>
+								<span class="social-icon"><a href="<?php echo $business_info['rss']; ?>" class="fa fa-rss"></a></span>
+							</div>
 							<a href="business-details.php?bid=<?php echo $business_info['business_id']; ?>" class="btn btn-danger">Read More</a>
+							<a href="claim-buisness.php?bid=<?php echo $business_info['business_id']; ?>" class="btn btn-danger">Claim buisness</a>
 						</div>
 					</div>
 					
@@ -219,13 +229,13 @@ if($business_infos){
 			<div class="row new-old">
 				<div class="col-12">
 					<?php
-						if(!empty($business_infos)) {
+						$page_url=getAddress();
+						$page_url.=(isset($_GET['keyword']) || isset($_GET['category']) || isset($_GET['state']) || isset($_GET['distance']))? '&' : '?';
 					?>
 					<?php if($page!=1) {?>
 					<a href="business.php?page=<?php echo ($page-1).$search_query.$category_query.$state_query.$distance_query; ?>" class="btn btn-outline-secondary float-left">← Older</a>
 				    <?php } ?>
 					<a href="business.php?page=<?php echo ($page+1).$search_query.$category_query.$state_query.$distance_query; ?>" class="btn btn-outline-dark float-right">Newer →</a>
-				<?php } ?>
 				</div>
 			</div>
 			<!-- .pager end -->

@@ -6,46 +6,53 @@ ini_set('display_errors', 1);
 //ob_start();
 include 'header.php'; 
 
-?>
+if(isset($_GET['bid']) && !empty($_GET['bid'])) {
+	$_SESSION['claim_id'] = $_GET['bid'];
+}
 
-<?php  
-   if(isset($_POST['loginSubmit']))
-	{
+if(isset($_POST['loginSubmit']))
+{
 	$username = $_POST['username'];
-       
-    $password =  md5($_POST['userpass']);
-  
-    $is_remember= $_POST['is_remember'];
+
+	$password =  md5($_POST['userpass']);
+
+	$is_remember= $_POST['is_remember'];
 	$confirmCode = "active";
 	
 
- $q="select * from tbl_users where user_name='".$username."' AND password='".$password."' AND com_code='".$confirmCode."'";
+	$q="select * from tbl_users where user_name='".$username."' AND password='".$password."' AND com_code='".$confirmCode."'";
 
-$res=mysqli_query($link,$q);
-$num=mysqli_num_rows($res);
-$result=mysqli_fetch_array($res);
-if(!empty($num))
-{
+	$res=mysqli_query($link,$q);
+	$num=mysqli_num_rows($res);
+	$result=mysqli_fetch_array($res);
+	if(!empty($num))
+	{
 
-	$_SESSION['user_id']=$result['user_id'];
-	$_SESSION['name']=$result['user_name']; 
-	header("location:user_profile.php");
+		$_SESSION['user_id']=$result['user_id'];
+		$_SESSION['name']=$result['user_name']; 
+
+		if(isset($_SESSION['claim_id']) && !empty($_SESSION['claim_id'])) {
+			header('location:claim-buisness.php?bid='.$_SESSION['claim_id']);
+			exit;
+		}else{
+			header("location:user_profile.php");
+		}
+	}
+	else
+	{
+
+		echo "<SCRIPT LANGUAGE='JavaScript'>
+		window.alert('Sorry wrong email & password or not verify email address')
+		window.location.href='manage.php';
+		</SCRIPT>";	
+
+	}
+
+
 }
-else
-{
 
-echo "<SCRIPT LANGUAGE='JavaScript'>
-   		 window.alert('Sorry wrong email & password or not verify email address')
-  		 window.location.href='manage.php';
-  		 </SCRIPT>";	
-	
-}
- 
 
-}
-      
-   
-    ?>
+?>
 
 <section id="page-title">
 
@@ -74,14 +81,14 @@ echo "<SCRIPT LANGUAGE='JavaScript'>
 		<div class="col_one_third nobottommargin">
 
 			<div class="nobottommargin">
-<form id="login-form" name="login-form" class="nobottommargin" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
+				<form id="login-form" name="login-form" class="nobottommargin" action="<?php echo $_SERVER['PHP_SELF']; ?>" method="post">
 
 					<h3>Login to your Account</h3>
 
 					<div class="col_full">
 						<label for="login-form-username">Username:</label>
 						<input type="text" id="login-form-username " name="username" value="" class="form-control userName ">
-						 <p class="d-error error_userName"></p>
+						<p class="d-error error_userName"></p>
 					</div>
 
 					<div class="col_full">
@@ -97,9 +104,9 @@ echo "<SCRIPT LANGUAGE='JavaScript'>
 					</div>
 					
 					<div class="col_full">
-					<span><a href="register.php">Register new account</a></span>
-					|
-					<span><a href="forgot_password.php">I forgot my password</a></span>
+						<span><a href="register.php">Register new account</a></span>
+						|
+						<span><a href="forgot_password.php">I forgot my password</a></span>
 					</div>
 
 				</form>
@@ -114,30 +121,30 @@ echo "<SCRIPT LANGUAGE='JavaScript'>
 </section>
 
 <script>
-jQuery(document).ready(function(){ 
-   	$('#loginSubmit').click(function(e){
-		var valid = true;
-	    var error_msg='';
-	   if ($('.userName').val() == '')
-        {
-         $(".error_userName").text("Please enter name");
-		  valid = false;
-        }
-		if ($('.userPass').val() == '')
-        {
-		    $(".error_userPass").text("Please enter password");
-			valid = false;
-           
-        }
-		
-	if (!valid) {
-    e.preventDefault();
-} else {
+	jQuery(document).ready(function(){ 
+		$('#loginSubmit').click(function(e){
+			var valid = true;
+			var error_msg='';
+			if ($('.userName').val() == '')
+			{
+				$(".error_userName").text("Please enter name");
+				valid = false;
+			}
+			if ($('.userPass').val() == '')
+			{
+				$(".error_userPass").text("Please enter password");
+				valid = false;
+
+			}
+
+			if (!valid) {
+				e.preventDefault();
+			} else {
  // allow the form to be submitted.
 }
+});
 	});
- });
-  
+
 </script>
 
 

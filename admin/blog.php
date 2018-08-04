@@ -66,7 +66,7 @@ if(isset($_GET['blog']) && !empty($_GET['blog'])){
 					</header>
 					<div class="panel-body">
 						<div class="table-responsive">
-							<table class="table mb-none">
+							<table class="table mb-none" id="blog_table">
 								<thead>
 									<tr>
 										<th>#</th>
@@ -111,3 +111,10 @@ if(isset($_GET['blog']) && !empty($_GET['blog'])){
 	</section>
 
 	<?php include("footer.php"); ?>
+
+	<script type="text/javascript">
+		$(document).ready( function () {
+		    $('#blog_table').DataTable();
+		} );
+
+	</script>
