@@ -7,7 +7,7 @@ if(!isset($_SESSION['user_id']) && empty($_SESSION['user_id'])) {
 
 include("config.php");
 require_once 'core/init.php';
-include 'header.php'; 
+include 'header.php';  
 
 if(isset($_GET['bid']) && !empty($_GET['bid'])){
 	$business_id = $_GET['bid'];
